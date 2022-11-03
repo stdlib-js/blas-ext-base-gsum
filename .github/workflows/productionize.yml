@@ -203,8 +203,8 @@ jobs:
             echo "remote-exists=false" >> $GITHUB_OUTPUT
           fi
 
-      # If `deno` exists, delete everything in branch and merge `production` into it
-      - name: 'If `deno` exists, delete everything in branch and merge `production` into it'
+      # If `deno` exists, delete everything in branch and copy `production` into it
+      - name: 'If `deno` exists, delete everything in branch and copy `production` into it'
         if: steps.deno-branch-exists.outputs.remote-exists
         run: |
           git checkout -b deno origin/deno
@@ -215,9 +215,10 @@ jobs:
           git add -A
           git commit -m "Remove files" --allow-empty
 
-          git config merge.theirs.name 'simulate `-s theirs`'
-          git config merge.theirs.driver 'cat %B > %A'
-          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+          # Copy files from `production` branch:
+          git checkout origin/production -- .
+          git add -A
+          git commit -m "Copy files from production branch"
 
       # If `deno` does not exist, create `deno` branch:
       - name: 'If `deno` does not exist, create `deno` branch'
@@ -369,8 +370,8 @@ jobs:
             echo "remote-exists=false" >> $GITHUB_OUTPUT
           fi
 
-      # If `umd` exists, delete everything in branch and merge `production` into it
-      - name: 'If `umd` exists, delete everything in branch and merge `production` into it'
+      # If `umd` exists, delete everything in branch and copy `production` into it
+      - name: 'If `umd` exists, delete everything in branch and copy `production` into it'
         if: steps.umd-branch-exists.outputs.remote-exists
         run: |
           git checkout -b umd origin/umd
@@ -381,9 +382,10 @@ jobs:
           git add -A
           git commit -m "Remove files" --allow-empty
 
-          git config merge.theirs.name 'simulate `-s theirs`'
-          git config merge.theirs.driver 'cat %B > %A'
-          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+          # Copy files from `production` branch:
+          git checkout origin/production -- .
+          git add -A
+          git commit -m "Copy files from production branch"
 
       # If `umd` does not exist, create `umd` branch:
       - name: 'If `umd` does not exist, create `umd` branch'
@@ -533,8 +535,8 @@ jobs:
             echo "remote-exists=false" >> $GITHUB_OUTPUT
           fi
 
-      # If `esm` exists, delete everything in branch and merge `production` into it
-      - name: 'If `esm` exists, delete everything in branch and merge `production` into it'
+      # If `esm` exists, delete everything in branch and copy `production` into it
+      - name: 'If `esm` exists, delete everything in branch and copy `production` into it'
         if: steps.esm-branch-exists.outputs.remote-exists
         run: |
           git checkout -b esm origin/esm
@@ -545,9 +547,10 @@ jobs:
           git add -A
           git commit -m "Remove files" --allow-empty
 
-          git config merge.theirs.name 'simulate `-s theirs`'
-          git config merge.theirs.driver 'cat %B > %A'
-          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
+          # Copy files from `production` branch:
+          git checkout origin/production -- .
+          git add -A
+          git commit -m "Copy files from production branch"
 
       # If `esm` does not exist, create `esm` branch:
       - name: 'If `esm` does not exist, create `esm` branch'
