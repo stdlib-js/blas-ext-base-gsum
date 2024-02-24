@@ -250,8 +250,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-ext-base-gsum.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-ext-base-gsum
 
-[test-image]: https://github.com/stdlib-js/blas-ext-base-gsum/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/blas-ext-base-gsum/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/blas-ext-base-gsum/actions/workflows/test.yml/badge.svg?branch=v0.2.1
+[test-url]: https://github.com/stdlib-js/blas-ext-base-gsum/actions/workflows/test.yml?query=branch:v0.2.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-ext-base-gsum/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-ext-base-gsum?branch=main
