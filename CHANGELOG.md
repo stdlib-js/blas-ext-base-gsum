@@ -2,6 +2,52 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-02-09)
+
+<section class="features">
+
+### Features
+
+-   [`152dfd2`](https://github.com/stdlib-js/stdlib/commit/152dfd2a9f6f420dee659694435c9e44f3095601) - add accessor arrays support to `blas/ext/base/gsum` [(#5134)](https://github.com/stdlib-js/stdlib/pull/5134)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`152dfd2`](https://github.com/stdlib-js/stdlib/commit/152dfd2a9f6f420dee659694435c9e44f3095601) - **feat:** add accessor arrays support to `blas/ext/base/gsum` [(#5134)](https://github.com/stdlib-js/stdlib/pull/5134) _(by Muhammad Haris)_
+-   [`7456e9f`](https://github.com/stdlib-js/stdlib/commit/7456e9f877610353d1d91969bd7cd30e3ef211c8) - **refactor:** update `blas/base/gsum` to follow current project conventions [(#4924)](https://github.com/stdlib-js/stdlib/pull/4924) _(by Aayush Khanna)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Aayush Khanna
+-   Muhammad Haris
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-28)
