@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-09)
+## Unreleased (2025-06-09)
 
 <section class="features">
 
@@ -22,6 +22,10 @@
 
 <details>
 
+-   [`3565318`](https://github.com/stdlib-js/stdlib/commit/3565318e3639b3e44890ed15ccd73560d3cac14c) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`3e9f3a0`](https://github.com/stdlib-js/stdlib/commit/3e9f3a0bdc4c231521f39148dbff889815bae6d7) - **docs:** fix missing period _(by Athan Reines)_
+-   [`81c8221`](https://github.com/stdlib-js/stdlib/commit/81c8221abcaf41ef614344d9c4bd3f287ed443d0) - **test:** add signed zero tests _(by Athan Reines)_
+-   [`f47e96c`](https://github.com/stdlib-js/stdlib/commit/f47e96cebf8b44bc5f2fe353d4f85550ceb0c65d) - **test:** add signed zero tests _(by Athan Reines)_
 -   [`152dfd2`](https://github.com/stdlib-js/stdlib/commit/152dfd2a9f6f420dee659694435c9e44f3095601) - **feat:** add accessor arrays support to `blas/ext/base/gsum` [(#5134)](https://github.com/stdlib-js/stdlib/pull/5134) _(by Muhammad Haris)_
 -   [`7456e9f`](https://github.com/stdlib-js/stdlib/commit/7456e9f877610353d1d91969bd7cd30e3ef211c8) - **refactor:** update `blas/base/gsum` to follow current project conventions [(#4924)](https://github.com/stdlib-js/stdlib/pull/4924) _(by Aayush Khanna)_
 
@@ -35,9 +39,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Aayush Khanna
+-   Athan Reines
+-   Gururaj Gurram
 -   Muhammad Haris
 
 </section>
